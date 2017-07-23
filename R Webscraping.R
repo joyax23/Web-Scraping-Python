@@ -2,18 +2,18 @@ install.packages("rvest")
 library(rvest)
 
 
-qbe <- read_html("https://www.group.qbe.com/")
+a <- read_html("https://www.group.a.com/")
 
 
 ############Get the title
-qbe %>%
-  html_nodes("#qbecom-frontpage .field-content a") %>%
+a %>%
+  html_nodes("#acom-frontpage .field-content a") %>%
   html_text()
 
 
 #############Get the dates:
-qbe %>%
-  html_nodes("#qbecom-frontpage .field-content span") %>%
+a %>%
+  html_nodes("#acom-frontpage .field-content span") %>%
   html_text()
 
 
